@@ -40,6 +40,9 @@ jspm_packages/
 # pytest-json-report generated file
 .report.json
 
+# python cache files
+*/__pycache__/
+
 # TypeScript v1 declaration files
 typings/
 

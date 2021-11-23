@@ -26,7 +26,10 @@ class DateReminder(DeadlinedReminder):
     # Overriding base class
     def is_due(self):
         # return super().is_due()
-        self.date <= datetime.now()
+        if self.date <= datetime.now():
+            return True
+        else:
+            return False
     
     def __iter__(self):
         text = self.text
