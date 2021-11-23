@@ -42,6 +42,7 @@ jspm_packages/
 
 # python cache files
 */__pycache__/
+__pycache__/
 
 # TypeScript v1 declaration files
 typings/
