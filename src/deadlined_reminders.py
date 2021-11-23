@@ -19,7 +19,7 @@ class DeadlinedReminder(Iterable, ABC):
 
 #Derived class
 class DateReminder(DeadlinedReminder):
-    def __init(self, text, date):
+    def __init__(self, text, date):
         self.date = parse(date, dayfirst=True)
         self.text = text
 
@@ -31,4 +31,4 @@ class DateReminder(DeadlinedReminder):
     def __iter__(self):
         text = self.text
         formatted_date = self.date.isoformat()
-        return iter(text, formatted_date)
+        return iter([text, formatted_date])
